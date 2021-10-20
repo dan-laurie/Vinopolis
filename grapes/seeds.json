@@ -1,0 +1,38 @@
+[
+  {
+    "model": "grapes.grape",
+    "pk": 1,
+    "fields": {
+      "name": "Shiraz"
+    }
+  },
+  {
+    "model": "grapes.grape",
+    "pk": 2,
+    "fields": {
+      "name": "Merlot"
+    }
+  },
+  {
+    "model": "grapes.grape",
+    "pk": 3,
+    "fields": {
+      "name": "Sauvignon Blanc"
+    }
+  },
+  {
+    "model": "grapes.grape",
+    "pk": 4,
+    "fields": {
+      "name": "Chablis"
+    }
+  },
+  {
+    "model": "grapes.grape",
+    "pk": 5,
+    "fields": {
+      "name": "Cabernet Sauvignon"
+    }
+  }
+  ]
+  
