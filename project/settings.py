@@ -137,7 +137,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Ask django to track a new auth model, we will create this in the new app
 AUTH_USER_MODEL = 'jwt_auth.User'
 
-# defina new variable
+# define new variable
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
