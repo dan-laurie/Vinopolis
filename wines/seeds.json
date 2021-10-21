@@ -192,5 +192,195 @@
       3
     ]
   }
+},
+{
+  "model": "wines.wine",
+  "pk": 12,
+  "fields": {
+    "name": "Domaine Jean-Max Roger ‘Cuvée Genese’ Sancerre 2019/20",
+    "type": "White",
+    "bio": "Jean-Max Roger began with just four hectares of vines. In the 50 years since, he's consistently produced sensational Sauvignon Blanc, and his winery is now one of Sancerre's finest. Today, he and his two sons pick each grape by hand on sustainably-run vineyards. This wine is then only released when the Rogers deem it ready. And the attention to detail shines in every sip. This is a remarkably fresh and complex Sancerre. Pair its notes of citrus and white flowers and long, flavoursome finish with white fish.",
+    "price": "21.99",
+    "big_pic": "https://i.imgur.com/bbiPiF5.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "White Fish: Dover Sole, Cod, Haddock",
+    "owner": 1,
+    "grapes": [
+      15
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 13,
+  "fields": {
+    "name": "La Raia 'Il Borgo' Gavi 2020",
+    "type": "White",
+    "bio": "This organic Gavi is from a bucolic paradise which shows why biodynamic farming and winemaking is such a great thing. The vineyards nestle between orchards of chestnuts, elderflower and acacia. Wildlife buzzes between the vines. The Cario family settled here nearly two decades ago – two decades which have seen immense change in the landscape as they’ve returned to biodynamic farming. This wine is an homage to that landscape. It has a real purity and freshness to it which immediately transports you to Piedmont. We love the blend of zingy flavour with stone-fruity, almond and blossom aromas. It’s a really pretty wine. The incredible crispness means it works perfectly with anything Mediterranean and tomato-based.",
+    "price": "14.99",
+    "big_pic": "https://i.imgur.com/DudA2fr.png",
+    "small_pic": "a",
+    "country": "Italy",
+    "flag": "https://i.imgur.com/h9A2Lnl.jpg",
+    "pairings": "Mediterranean Cuisine, Tomato-Based Dishes",
+    "owner": 1,
+    "grapes": [
+      24
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 14,
+  "fields": {
+    "name": "Rocklin Ranch Chardonnay 2018/19, Monterey",
+    "type": "White",
+    "bio": "Rocklin Ranch has sustainability at its heart. Situated in the volcanic foothills of Monterey, their winery is powered by a single wind turbine. They take their name from the ancient river rocks deposited around their vineyards. Monterey’s reputation for distinctive white wines is certainly reflected in this first-class bottle. Classic Chardonnay lovers, this one’s for you. Bright and elegant, this has notes of red apple, pear and lemon. Pair with a grilled chicken caesar salad.",
+    "price": "18.99",
+    "big_pic": "https://i.imgur.com/XTxtTzq.png",
+    "small_pic": "a",
+    "country": "USA",
+    "flag": "https://i.imgur.com/g4RjEvc.jpg",
+    "pairings": "Salads",
+    "owner": 1,
+    "grapes": [
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 15,
+  "fields": {
+    "name": "Domaine L. Chatelain Chablis 2020",
+    "type": "White",
+    "bio": "A sip of this Chablis is like taking a bite of a Granny Smith apple. It’s intensely refreshing – so crisp and citrussy that you can’t help going back for a second glass. Domaine Chatelain are known for this classic style for good reason. We love it with oysters.",
+    "price": "17.99",
+    "big_pic": "https://i.imgur.com/ZcdqorN.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Seafood: Oysters especially",
+    "owner": 1,
+    "grapes": [
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 16,
+  "fields": {
+    "name": "Pinot Gris Grand Cru Spiegel 2018/19 Domaines Schlumberger",
+    "type": "White",
+    "bio": "Spiegel is known as one of the best sites in Alsace for Pinot Gris, and lies on an east-facing slope of sandy clay. Winemaking is subject to Schlumberger's legendary attention to detail, including hand-selection of the grapes, whole-bunch pressing and careful lees ageing. A wine of great texture and depth of flavour, this Pinot Gris is at once youthfully vibrant, harmonious and mature. The palate is full of ripe white fruit, with finely balanced sweetness and acidity. Drink with ripe soft cheeses or rich, creamy duck liver pâte.",
+    "price": "17.99",
+    "big_pic": "https://i.imgur.com/mh19LIv.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Ripe soft cheeses, rich duck liver pâte",
+    "owner": 1,
+    "grapes": [
+      17
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 17,
+  "fields": {
+    "name": "Peter and Ulrich Dry Riesling 2020",
+    "type": "White",
+    "bio": "From the small family winery Peter & Ulrich Griebeler in the Mosel. This wine is crisp and elegant with notes of ripe apple, peach and apricot. A perfect balance between rich fruit flavours and refreshing acidity with just a hint of minerality on the finish.",
+    "price": "12.99",
+    "big_pic": "https://i.imgur.com/YXKA9pd.png",
+    "small_pic": "a",
+    "country": "Germany",
+    "flag": "https://i.imgur.com/KYIJa66.jpg",
+    "pairings": "A great food wine this will match with salads, fish or lightly spiced meat dishes.",
+    "owner": 1,
+    "grapes": [
+      16
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 18,
+  "fields": {
+    "name": "Saint Clair Pioneer Block Chardonnay 2019 Marlborough",
+    "type": "White",
+    "bio": "St. Clair have gone for maximum impact and expression with this Chardonnay, fermenting 100% of the grapes in a mixture of new and old French oak, before ageing the wine on for 9 months, with regular stirring to draw full character from the lees. The New Zealand trademarks of fresh and snappy peach and tropical fruits are finished with a wonderfully soft, generous texture and a biscuity edge. Rich, with plentiful amounts of pure, tropical fruit.",
+    "price": "19.99",
+    "big_pic": "https://i.imgur.com/ZOEHKo3.png",
+    "small_pic": "a",
+    "country": "New Zealand",
+    "flag": "https://i.imgur.com/2HSqd5E.jpg",
+    "pairings": "This wine is fantastic with grilled asparagus or fish with parsley sauce.",
+    "owner": 1,
+    "grapes": [
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 19,
+  "fields": {
+    "name": "Cline 'Nancy's Vines' Viognier 2019/20",
+    "type": "White",
+    "bio": "Fred Cline is one of the original 'Rhône Rangers', who broke tradition by working with traditionally French grape varieties on the West Coast of America. Along with wife Nancy, he creates this rich, golden style of Viognier. It is full-bodied with crisp acidity, notes of tropical fruit, apricot and orange.",
+    "price": "17.99",
+    "big_pic": "https://i.imgur.com/pdg66mE.png",
+    "small_pic": "a",
+    "country": "USA",
+    "flag": "https://i.imgur.com/g4RjEvc.jpg",
+    "pairings": "A perfect match for Thai cuisine.",
+    "owner": 1,
+    "grapes": [
+      20
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 20,
+  "fields": {
+    "name": "Nautilus Chardonnay 2019, Marlborough",
+    "type": "White",
+    "bio": "At Nautilus, everything is done with sustainability in mind. The winery is part of the Sustainable Winegrowers New Zealand programme and has been owned by the same dedicated family for 25 years. In this Chardonnay, expect classic notes of nectarine and almond, with a creamy finish to come as it matures.",
+    "price": "23.99",
+    "big_pic": "https://i.imgur.com/Zt9fOAQ.png",
+    "small_pic": "a",
+    "country": "New Zealand",
+    "flag": "https://i.imgur.com/2HSqd5E.jpg",
+    "pairings": "Match this luxurious white with an equally creamy pasta.",
+    "owner": 1,
+    "grapes": [
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 21,
+  "fields": {
+    "name": "Cloudy Bay Sauvignon Blanc 2020, Marlborough",
+    "type": "White",
+    "bio": "Cloudy Bay's huge success is largely down to groundbreaking Sauvignon Blanc. This is one of New Zealand's most celebrated wines and a real benchmark for quality. And remarkably, it will develop with age over the next five years. You can say the same for very few Sauvignon Blancs. Expect a complex and layered Sauvignon, with notes of ripe lemon, lime, passionfruit, peach and freshly cut grass.",
+    "price": "26.99",
+    "big_pic": "https://i.imgur.com/Kn0XQHn.png",
+    "small_pic": "a",
+    "country": "New Zealand",
+    "flag": "https://i.imgur.com/2HSqd5E.jpg",
+    "pairings": "Serve this chilled with beautifully seared salmon",
+    "owner": 1,
+    "grapes": [
+      15
+    ]
+  }
 }
 ]
