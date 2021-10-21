@@ -21,7 +21,7 @@ class WineListView(APIView):
     # get ALL wines
     def get(self, _request):
         wines = Wine.objects.all()
-        serialized_wines = WineSerializer(wines, many=True)
+        serialized_wines = PopulatedWineSerializer(wines, many=True)
         return Response(serialized_wines.data, status=status.HTTP_200_OK)
 
     # POST add new wine to db

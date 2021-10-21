@@ -5,4 +5,4 @@ from ..models import Grape
 class GrapeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Grape
-        fields = '__all__'
+        fields = "__all__"

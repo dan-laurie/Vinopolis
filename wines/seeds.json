@@ -1,0 +1,196 @@
+[
+{
+  "model": "wines.wine",
+  "pk": 2,
+  "fields": {
+    "name": "Baron Edmond de Rothschild Montagne-Saint-Émilion 2018",
+    "type": "Red",
+    "bio": "This delicious Saint-Émilion look-a-like is made by Domaine Baron de Rothschild – the same family behind First Growth £1,000-a-bottle Château Lafite. They bring all the same expertise to this. It’s from Montagne-Saint-Émilion – one of the only Saint-Émilion satellite appellations with high enough quality wines to use the Saint-Émilion name. Thanks to its Lafite-standard winemakers, it punches well above its price point. It’s rich. It’s savoury. It’s full of both fresh and dried fruit flavours.",
+    "price": "24.99",
+    "big_pic": "https://i.imgur.com/16op6On.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Steaks, Charcuterie Boards, Cheeses",
+    "owner": 1,
+    "grapes": [
+      1
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 3,
+  "fields": {
+    "name": "Bread and Butter Cabernet Sauvignon 2019, California",
+    "type": "Red",
+    "bio": "California is where you’ll find some of the world’s most coveted Cabernet Sauvignon. This is made in the image of the very best of the Golden State. It’s aged in both French and American oak to deepen its complexity and soften its texture for an enviably smooth sip. Expect lavish notes of vanilla and sweet spice, blackberry, cherries and chocolate. Fantastic with steak with blue cheese.",
+    "price": "15.99",
+    "big_pic": "https://i.imgur.com/Zbj8xr5.png",
+    "small_pic": "a",
+    "country": "USA",
+    "flag": "https://i.imgur.com/g4RjEvc.jpg",
+    "pairings": "Steaks, Blue Cheese",
+    "owner": 1,
+    "grapes": [
+      1
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 4,
+  "fields": {
+    "name": "Réserve des Diacres Châteauneuf-du-Pape 2018",
+    "type": "Red",
+    "bio": "To buy a single row of vines in Châteauneuf-du-Pape, you’ll pretty much need to re-mortgage your house. It’s no wonder the wines are so expensive – until now. We worked with Baptiste Grangeon, owner and winemaker of renowned Domaine Cristia, to blend the perfect Châteauneuf – without the typical price tag. It’s blended from three different terroirs within the region: sand, limestone and the famous ‘galets roulés’ pebbles. The magic? Blending from these different terroirs is the secret to the best Châteauneuf. Dense. Rich. Heady. It’s full of spice and raspberry and redcurrant fruit. And its firm structure makes it perfect with Mediterranean-style foods, like rustic vegetable dishes.",
+    "price": "24.99",
+    "big_pic": "https://i.imgur.com/CqmGqJS.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Mediterranean Cuisine, Rustic Vegetable Dishes",
+    "owner": 1,
+    "grapes": [
+      8,
+      4
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 5,
+  "fields": {
+    "name": "Catena Zapata 'Catena Alta' Malbec 2017/18, Mendoza",
+    "type": "Red",
+    "bio": "Catena Zapata was awarded 'World's Most Admired Wine Brand 2020' by Drinks International Magazine. They're experts in Mendoza Malbec and are largely responsible for putting Argentinian fine wine on the world map. It really shows in this rich, supple red. It has notes of black fruit, violets, mocha and vanilla that are a treat with a sirloin steak.",
+    "price": "33.99",
+    "big_pic": "https://i.imgur.com/3pynUs3.png",
+    "small_pic": "a",
+    "country": "Argentina",
+    "flag": "https://i.imgur.com/RdfyZRT.jpg",
+    "pairings": "Rich red meat dishes",
+    "owner": 1,
+    "grapes": [
+      9
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 6,
+  "fields": {
+    "name": "Von Der Land Zweigelt 2019/20",
+    "type": "Red",
+    "bio": "This Austrian wine is a project between the prestigious Bauer family and one of the country's leading wine experts, Ferdinand Mayr. Von der Land is a celebration of the expressive quality of the Austrian land. Discover notes of cherries and a touch of oak. Enjoy with roast duck.",
+    "price": "11.99",
+    "big_pic": "https://i.imgur.com/GkI68zI.png",
+    "small_pic": "a",
+    "country": "Austria",
+    "flag": "https://i.imgur.com/laiL1hp.jpg",
+    "pairings": "Roast Dinners: Poultry, Meat, Nut Roasts",
+    "owner": 1,
+    "grapes": [
+      22
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 7,
+  "fields": {
+    "name": "Chronic Cellars 'Purple Paradise' 2019, Paso Robles",
+    "type": "Red",
+    "bio": "Jake and Josh Beckett grew up in Paso Robles wine country. So it was no coincidence that the pair would found Chronic Cellars together back in 2004. ‘Chronic’ is the brothers’ shorthand for ‘awesome’, as, with thanks to their close contacts with the best grape growers, these wines are made from the finest grapes. It certainly shows in this Zinfandel-based blend which really does taste ‘purple’. Rich. Ripe. Bold. It’s full of plum, black fruit, lush vanilla and chocolate spice. Soft and approachable – it's the perfect wine to share with friends over barbecue pulled pork.",
+    "price": "17.99",
+    "big_pic": "https://i.imgur.com/ZHnQvRm.png",
+    "small_pic": "a",
+    "country": "USA",
+    "flag": "https://i.imgur.com/g4RjEvc.jpg",
+    "pairings": "BBQ: Pulled Pork, Skewer Kebabs",
+    "owner": 1,
+    "grapes": [
+      8,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 8,
+  "fields": {
+    "name": "Cuvée Pierre Brun 2018/19 Domaine des Tourelles",
+    "type": "Red",
+    "bio": "When it comes to Lebanese wines it's not only Château Musar that's worth collecting. Founded in 1868, Tourelles is Lebanon's oldest winery. It's now run by Faouzi Issa, who earned his stripes working in Côte Rôtie and at iconic Château Margaux.This experience is reaping rewards. A blend of Cabernet, Syrah, Cinsault and Carignan, this has fine aromatic morello cherry and spice aromas, a dark fruit core with layered earthy spice, and balanced tannins.",
+    "price": "12.99",
+    "big_pic": "https://i.imgur.com/ldNBes3.png",
+    "small_pic": "a",
+    "country": "Lebanon",
+    "flag": "https://i.imgur.com/dpVFF2p.jpg?1",
+    "pairings": "Perfect with anything from Vegan to Meat dishes, a true all-rounder!",
+    "owner": 1,
+    "grapes": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 9,
+  "fields": {
+    "name": "The Guv'nor",
+    "type": "Red",
+    "bio": "The Guv'nor is delicious proof that throwing out the rulebook can yield fantastic results. Spain’s wine laws are notoriously strict and convoluted. The Guv'nor breaks them all. We commissioned the winemakers to make the best wine they could – no rules, no restrictions, no red tape. The bottle they want to kick back with after a long day in the vineyards. The result? It’s bold. It’s fruity. It’s a very modern Spanish red that goes with anything, especially spicy barbecue meats or anything chargrilled.",
+    "price": "8.99",
+    "big_pic": "https://i.imgur.com/KEWWyHq.png",
+    "small_pic": "a",
+    "country": "Spain",
+    "flag": "https://i.imgur.com/D2FJSv0.jpg",
+    "pairings": "Spicy barbecued meats, chargrilled meats",
+    "owner": 1,
+    "grapes": [
+      23
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 10,
+  "fields": {
+    "name": "Barolo 2017 Ciabot Berton",
+    "type": "Red",
+    "bio": "If you're seeking a wine as fine as your celebrations, you can't beat the iconic power, richness and sophistication of Italy's star wine, Barolo. Kerin O'Keefe, of the wine enthusiast has awarded this Barolo a huge 93 point score and said, 'This boasts alluring scents of new leather, rose petal and pipe tobacco. The juicy palate delivers raspberry compote, red cherry, licorice and white pepper alongside firm, polished tannins.",
+    "price": "30.99",
+    "big_pic": "https://i.imgur.com/40P4d8G.png",
+    "small_pic": "a",
+    "country": "Italy",
+    "flag": "https://i.imgur.com/h9A2Lnl.jpg",
+    "pairings": "Rich pasta, meats",
+    "owner": 1,
+    "grapes": [
+      7
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 11,
+  "fields": {
+    "name": "Definition Pinot Noir 2019, Marlborough",
+    "type": "Red",
+    "bio": "Kiwi Pinot Noir is a real success story. It’s no longer simply compared to Burgundy – it’s become a coveted style of Pinot in its own right. So, it was a no-brainer addition to our Definition range. We wanted something exciting to do justice to New Zealand’s pioneering spirit. So, we headed to Marlborough. The region’s history with Pinot is younger, but if there was anyone who could help us get the blend just right it was Marlborough and Pinot experts, Saint Clair. With them we selected grapes from top parcels in the Southern Valleys – the best site for Pinot in the region. The results speak for themselves. It’s deliciously savoury with classic Marlborough dark fruit. Think black cherry and raspberry. It’s perfumed but fresh, with fine tannins and a lovely silky texture. Ideal with duck.",
+    "price": "15.99",
+    "big_pic": "https://i.imgur.com/AvNxBkv.png",
+    "small_pic": "a",
+    "country": "New Zealand",
+    "flag": "https://i.imgur.com/2HSqd5E.jpg",
+    "pairings": "Perfect with Duck and general Poultry dishes",
+    "owner": 1,
+    "grapes": [
+      3
+    ]
+  }
+}
+]

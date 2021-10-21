@@ -145,5 +145,19 @@
   "fields": {
     "name": "Chenin Blanc"
   }
+},
+{
+  "model": "grapes.grape",
+  "pk": 22,
+  "fields": {
+    "name": "Zwieigelt"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 23,
+  "fields": {
+    "name": "Tempranillo"
+  }
 }
 ]

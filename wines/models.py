@@ -5,9 +5,9 @@ from django.db.models.deletion import CASCADE
 
 
 class Wine(models.Model):
-    name = models.CharField(max_length=30, default=None)
+    name = models.CharField(max_length=300, default=None)
     type = models.CharField(max_length=30, default=None)
-    bio = models.CharField(max_length=300, default=None)
+    bio = models.CharField(max_length=2000, default=None)
     price = models.DecimalField(max_digits=8, decimal_places=2, default=None)
     big_pic = models.CharField(max_length=500, default=None)
     small_pic = models.CharField(max_length=500, default=None)
