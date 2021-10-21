@@ -382,5 +382,207 @@
       15
     ]
   }
+},
+{
+  "model": "wines.wine",
+  "pk": 22,
+  "fields": {
+    "name": "Floração Rosé 2019",
+    "type": "Rosé",
+    "bio": "'Floração' is the Portuguese word for blossoming; a nod to the beautiful Jacaranda trees that blossom along the streets of Lisbon at the start of summer. Loaded with thirst-quenching flavours of wild strawberry, raspberry and redcurrant, this is a real treat. With a refreshingly dry finish and crisp acidity, Floração is the perfect Rosé for long summer days.",
+    "price": "7.99",
+    "big_pic": "https://i.imgur.com/Od2ftou.png",
+    "small_pic": "a",
+    "country": "Portugal",
+    "flag": "https://i.imgur.com/Atx43js.jpg",
+    "pairings": "Perfect for a picnic with fruits!",
+    "owner": 1,
+    "grapes": [
+      1,
+      25
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 23,
+  "fields": {
+    "name": "Château Minuty 'Cuvée Prestige' 2020, Côtes de Provence",
+    "type": "Rosé",
+    "bio": "Château Minuty sources the grapes for its 'Cuvée Prestige' from some of the very best Provençal vineyards. Taste the benefits in this blend of Grenache, Cinsault, Syrah and Tibouren, a grape found almost exclusively in Provence. It's powerful-yet-balanced with hints of citrus and red fruit licked by a refreshing minerality. This is the sun-soaked south of France in a bottle.",
+    "price": "19.99",
+    "big_pic": "https://i.imgur.com/588yWI8.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Fruits, sweet desserts.",
+    "owner": 1,
+    "grapes": [
+      8,
+      4
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 24,
+  "fields": {
+    "name": "Chapel Down English Rosé, England",
+    "type": "Rosé",
+    "bio": "This elegant sparkling wine from the excellent Chapel Down winery is made using the traditional method, from a blend of grapes that thrive in the cool climes of Kent. Slight hints of rose petals and a soft strawberry character, this crisp, medium bodied sparkling wine also has a citrus streak and fine, persistent bubbles.",
+    "price": "29.99",
+    "big_pic": "https://i.imgur.com/aAezOwv.jpg",
+    "small_pic": "a",
+    "country": "England",
+    "flag": "https://i.imgur.com/YsR5gar.jpg",
+    "pairings": "Smoked salmon is a fantastic match to this wine, along with crab salad.",
+    "owner": 1,
+    "grapes": [
+      3,
+      26,
+      27
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 25,
+  "fields": {
+    "name": "Pasqua '11 Minutes' Rosé, Lake Garda",
+    "type": "Rosé",
+    "bio": "It's made from Corvina, Trebbiano, Syrah and Carménère grapes and left on the skins for exactly 11 minutes (hence the name). This is the optimal time for the wine to develop a delicate rosy hue while retaining a light body. It's elegant and subtly spicy, with plenty of red-fruit flavours.",
+    "price": "15.99",
+    "big_pic": "https://i.imgur.com/gVwDqDN.png",
+    "small_pic": "a",
+    "country": "Italy",
+    "flag": "https://i.imgur.com/h9A2Lnl.jpg",
+    "pairings": "Best with baked white fish, olives and tomatoes.",
+    "owner": 1,
+    "grapes": [
+      10,
+      29,
+      4,
+      28
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 26,
+  "fields": {
+    "name": "Balfour Saignée 2018, Kent",
+    "type": "Rosé",
+    "bio": "The dynamic team at Balfour have applied the traditional Saignée technique - more commonly seen in Champagne and rarely found in rosé - to craft this unique wine. This involves extracting juice from a period of grape skin contact, rather than blending. The result? A structured and fragrant wine with herbaceous character and notes of thyme, fennel and rose.",
+    "price": "34.99",
+    "big_pic": "https://i.imgur.com/KoKL9fW.png",
+    "small_pic": "a",
+    "country": "England",
+    "flag": "https://i.imgur.com/YsR5gar.jpg",
+    "pairings": "Enjoy with creamy chicken dishes or soft cheeses.",
+    "owner": 1,
+    "grapes": [
+      3,
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 27,
+  "fields": {
+    "name": "Alphonse Mellot 'Le Paradis' Sancerre Rosé 2019",
+    "type": "Rosé",
+    "bio": "The Mellots have a rich 507-year-history in Sancerre. One member was even appointed as Louis XIV’s official wine advisor. Today, Alphonse, the 19th generation of the family, crafts this organic rosé in line with the lunar cycle. All this attention to detail means he's now regarded as one of Sancerre's finest winemakers. And it really shows here. Expect notes of red fruits, white pepper and sweet spices.",
+    "price": "19.99",
+    "big_pic": "https://i.imgur.com/qlpU2qs.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Try with fresh white fish dishes.",
+    "owner": 1,
+    "grapes": [
+      3
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 28,
+  "fields": {
+    "name": "Cloudy Bay Pelorus Rosé, Marlborough",
+    "type": "Rosé",
+    "bio": "An excellent rosé from New Zealand's masters of top quality sparkling wine. Vinified in the traditional method, from 80% Pinot Noir, selected from a number of parcels in the Wairau Valley, blended to create a defined yet delicate style. Fine bubbles and a pale pink colour. The aromas are of strawberry and cranberry, with subtle pot pourri and flint. The palate is explosive and abundant, with lashings of cherry fruit and sweet spice.",
+    "price": "28.99",
+    "big_pic": "https://i.imgur.com/Oh1QlRW.png",
+    "small_pic": "a",
+    "country": "New Zealand",
+    "flag": "https://i.imgur.com/2HSqd5E.jpg",
+    "pairings": "Drink with smoked salmon or charcuterie canapés, sashimi or Peking duck.",
+    "owner": 1,
+    "grapes": [
+      3,
+      14
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 29,
+  "fields": {
+    "name": "Miraval Rosé 2020, Côtes de Provence",
+    "type": "Rosé",
+    "bio": "Miraval shot to fame when the estate was purchased by Brad Pitt and Angelina Jolie. Its winemaking is now done under the guidance of the Perrin family, one of the most celebrated family producers in the Rhône Valley, and a previous vintage has been named the best rosé in the world by Wine Spectator Magazine. This is a fresh, elegant rosé, with flavours of redcurrant and citrus, mineral and saline notes and a long, intense finish.",
+    "price": "19.99",
+    "big_pic": "https://i.imgur.com/3Frays8.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Try with fresh white fish dishes.",
+    "owner": 1,
+    "grapes": [
+      8,
+      4,
+      30
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 30,
+  "fields": {
+    "name": "Les Vignerons de Tutiac 'The Lion and The Lily' Rosé 2020, Bordeaux",
+    "type": "Rosé",
+    "bio": "Bordeaux may be best known for its reds, but it was actually one of the original rosé producing regions. The Lion & The Lily, which won silver at the Global Rosé Masters 2020, is a delicious example of what it can do when it comes to pink. Made from 100% Merlot, it has clean notes of wild strawberry and cherry alongside a fresh minerality.",
+    "price": "14.99",
+    "big_pic": "https://i.imgur.com/AJdvUeD.png",
+    "small_pic": "a",
+    "country": "France",
+    "flag": "https://i.imgur.com/As0fb72.jpg",
+    "pairings": "Try with fresh white fish dishes.",
+    "owner": 1,
+    "grapes": [
+      2
+    ]
+  }
+},
+{
+  "model": "wines.wine",
+  "pk": 31,
+  "fields": {
+    "name": "Bread and Butter Rosé 2020, California",
+    "type": "Rosé",
+    "bio": "Bread & Butter is the biggest newcomer in luxury American wine. Every one of its WIGIGs (when it's gone, it's gone!) that we've stocked has sold out. So we're thrilled to bring you this remarkably fresh rosé. A blend of Grenache and Barbera, its bright notes of red fruit, melon and red-bush tea are balanced by a zippy acidity.",
+    "price": "15.99",
+    "big_pic": "https://i.imgur.com/NQyDUye.png",
+    "small_pic": "a",
+    "country": "USA",
+    "flag": "https://i.imgur.com/g4RjEvc.jpg",
+    "pairings": "Try with fresh white fish dishes.",
+    "owner": 1,
+    "grapes": [
+      8,
+      11
+    ]
+  }
 }
 ]

@@ -166,5 +166,47 @@
   "fields": {
     "name": "Cortese"
   }
+},
+{
+  "model": "grapes.grape",
+  "pk": 25,
+  "fields": {
+    "name": "Castelão"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 26,
+  "fields": {
+    "name": "Rivaner"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 27,
+  "fields": {
+    "name": "Reichensteiner"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 28,
+  "fields": {
+    "name": "Corvina"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 29,
+  "fields": {
+    "name": "Trebbiano"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 30,
+  "fields": {
+    "name": "Cinsault"
+  }
 }
 ]
