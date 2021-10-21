@@ -1,38 +1,149 @@
 [
-  {
-    "model": "grapes.grape",
-    "pk": 1,
-    "fields": {
-      "name": "Shiraz"
-    }
-  },
-  {
-    "model": "grapes.grape",
-    "pk": 2,
-    "fields": {
-      "name": "Merlot"
-    }
-  },
-  {
-    "model": "grapes.grape",
-    "pk": 3,
-    "fields": {
-      "name": "Sauvignon Blanc"
-    }
-  },
-  {
-    "model": "grapes.grape",
-    "pk": 4,
-    "fields": {
-      "name": "Chablis"
-    }
-  },
-  {
-    "model": "grapes.grape",
-    "pk": 5,
-    "fields": {
-      "name": "Cabernet Sauvignon"
-    }
+{
+  "model": "grapes.grape",
+  "pk": 1,
+  "fields": {
+    "name": "Cabernet Sauvignon"
   }
-  ]
-  
+},
+{
+  "model": "grapes.grape",
+  "pk": 2,
+  "fields": {
+    "name": "Merlot"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 3,
+  "fields": {
+    "name": "Pinot Noir"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 4,
+  "fields": {
+    "name": "Syrah (Shiraz)"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 5,
+  "fields": {
+    "name": "Zinfandel"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 6,
+  "fields": {
+    "name": "Sangiovese"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 7,
+  "fields": {
+    "name": "Nebbiolo"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 8,
+  "fields": {
+    "name": "Grenache/Garnacha"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 9,
+  "fields": {
+    "name": "Malbec"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 10,
+  "fields": {
+    "name": "Carménère"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 11,
+  "fields": {
+    "name": "Barbera"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 12,
+  "fields": {
+    "name": "Cabernet Franc"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 13,
+  "fields": {
+    "name": "Petite Verdot"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 14,
+  "fields": {
+    "name": "Chardonnay"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 15,
+  "fields": {
+    "name": "Sauvignon Blanc"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 16,
+  "fields": {
+    "name": "Riesling"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 17,
+  "fields": {
+    "name": "Pinot Gris"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 18,
+  "fields": {
+    "name": "Semillon"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 19,
+  "fields": {
+    "name": "Gewurztraminer"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 20,
+  "fields": {
+    "name": "Viognier"
+  }
+},
+{
+  "model": "grapes.grape",
+  "pk": 21,
+  "fields": {
+    "name": "Chenin Blanc"
+  }
+}
+]
