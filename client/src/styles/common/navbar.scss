@@ -1,0 +1,37 @@
+nav {
+  .navbar-item,
+  .navbar-link {
+    color: #58181f;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .navbar-link a {
+    border-color: #58181f;
+  }
+  a {
+    text-decoration: none;
+  }
+  .signup {
+    background-color: #58181f;
+    color: white;
+    transition: 0.4s ease-in-out;
+    &:hover {
+      color: white;
+      transform: scale(1.05);
+    }
+  }
+  .login {
+    background-color: rgba(88, 24, 31, 0.7);
+    color: white;
+    transition: 0.4s ease-in-out;
+    &:hover {
+      color: white;
+      transform: scale(1.05);
+    }
+  }
+}
+select::-ms-expand {
+  border-color: #58181f;
+}
