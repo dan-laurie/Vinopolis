@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import axios from 'axios'
 import Home from './components/Home'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
+import Register from './components/auth/Register'
+import Login from './components/auth/Login'
 
 function App() {
   useEffect(() => {
@@ -18,7 +20,15 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Home exact path='/' />
+        <Route  exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/register'>
+          <Register  />
+        </Route>
+        <Route exact path='/login'>
+          <Login  />
+        </Route>
       </Switch>
       <Footer />
     </BrowserRouter>

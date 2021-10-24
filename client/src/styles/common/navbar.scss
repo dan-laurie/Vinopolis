@@ -1,9 +1,11 @@
 nav {
   .navbar-item,
   .navbar-link {
-    color: #58181f;
-    &:hover {
-      color: black;
+    a {
+      color: #58181f;
+      &:hover {
+        color: burlywood;
+      }
     }
   }
 
@@ -12,23 +14,31 @@ nav {
   }
   a {
     text-decoration: none;
+    color: #58181f;
   }
   .signup {
     background-color: #58181f;
-    color: white;
-    transition: 0.4s ease-in-out;
-    &:hover {
+
+    a {
       color: white;
-      transform: scale(1.05);
+      transition: 0.4s ease-in-out;
+      &:hover {
+        color: burlywood;
+        transform: scale(1.05);
+      }
     }
   }
   .login {
     background-color: rgba(88, 24, 31, 0.7);
     color: white;
-    transition: 0.4s ease-in-out;
-    &:hover {
+
+    a {
       color: white;
-      transform: scale(1.05);
+      transition: 0.4s ease-in-out;
+      &:hover {
+        color: burlywood;
+        transform: scale(1.05);
+      }
     }
   }
 }
