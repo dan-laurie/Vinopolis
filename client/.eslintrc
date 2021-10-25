@@ -90,6 +90,6 @@
       0
     ],
     "react/react-in-jsx-scope": "off",
-    "no-used-vars": 0
+    "no-unused-vars": 0
   }
 }

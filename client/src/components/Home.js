@@ -4,46 +4,46 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <>
-      {/* <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-        crossOrigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossOrigin="anonymous"
-      ></script> */}
       <div className="title-img">
         <img className="title-img" src="https://i.imgur.com/lr0MJZO.png"></img>
       </div>
-      
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="c-pic d-block" src="https://i.imgur.com/OI5SLQW.jpg" alt="First slide"/>
+            <img src="https://i.imgur.com/OI5SLQW.jpg" className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Rich Reds</h5>
+              <p>Check out our fantastic range of lushious red wines!</p>
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="c-pic d-block" src="https://i.imgur.com/P8vRt9A.jpg" alt="Second slide"/>
+            <img src="https://i.imgur.com/P8vRt9A.jpg" className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Fresh Whites</h5>
+              <p>Check out our fantastic range of fresh white wines!</p>
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="c-pic d-block" src="https://i.imgur.com/FDVi8ZU.jpg" alt="Third slide"/>
+            <img src="https://i.imgur.com/FDVi8ZU.jpg" className="d-block w-100" alt="..."/>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Fruitful Rosé&apos;s</h5>
+              <p>Check out our fantastic range of fruitful rosé wines!</p>
+            </div>
           </div>
         </div>
-        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only"></span>
-        </a>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
 
       <div className="gen-info">

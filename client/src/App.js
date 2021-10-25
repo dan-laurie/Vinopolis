@@ -6,15 +6,9 @@ import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
+import Catalogue from './components/catalogue/Catalogue'
 
 function App() {
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios('/api/wines') 
-      console.log(data)
-    }
-    getData()
-  })
 
   return (
     <BrowserRouter>
@@ -28,6 +22,9 @@ function App() {
         </Route>
         <Route exact path='/login'>
           <Login  />
+        </Route>
+        <Route exact path='/wines'>
+          <Catalogue  />
         </Route>
       </Switch>
       <Footer />
