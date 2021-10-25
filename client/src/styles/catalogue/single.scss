@@ -1,0 +1,32 @@
+.single-page {
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .wine-bio {
+    max-width: 500px;
+    margin-left: 30px;
+    p {
+      margin-top: 40px;
+    }
+  }
+  .pairings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wine-flag {
+    h4 {
+      text-transform: uppercase;
+      color: burlywood;
+    }
+    display: flex;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      margin-left: 10px;
+    }
+  }
+}

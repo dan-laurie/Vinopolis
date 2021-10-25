@@ -17,13 +17,39 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+.filter-1 {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  position: fixed;
+  margin-left: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  p {
+    margin: 20px;
+  }
+  #filter {
+    padding: 0;
+    background-color: #58181f;
+    color: white;
+  }
+}
+
 .wine-card {
   display: flex;
   width: 700px;
   height: 320px;
   border-radius: 10px;
   margin: 30px auto;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0 3px 10px rgb(222, 184, 135);
   transition: 0.4s ease-in-out;
   &:hover {
     transform: scale(1.02);
@@ -37,9 +63,11 @@
     }
     h3 {
       margin-top: 20px;
+      color: black;
     }
   }
   .wine-origin {
+    color: black;
     display: flex;
     flex-direction: column;
     margin-left: 20px;

@@ -7,6 +7,7 @@ import Footer from './components/common/Footer'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import Catalogue from './components/catalogue/Catalogue'
+import SingleWine from './components/catalogue/SingleWine'
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path='/wines'>
           <Catalogue  />
+        </Route>
+        <Route exact path='/wines/:id'>
+          <SingleWine  />
         </Route>
       </Switch>
       <Footer />
