@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
-
+import Slide from 'react-reveal/Slide'
 
 const Catalogue = () => {
 
   const [ wines, setWines ] = useState(null)
   const [ filteredWines, setFilteredWines ] = useState([])
+  const [ doubleFilteredWines, setDoubleFilteredWines ] = useState([])
   const [ updatedWines, setUpdatedWines ] = useState([])
 
   const { id } = useParams()
@@ -24,11 +25,16 @@ const Catalogue = () => {
     getWines()
   }, [])
 
+  useEffect(() => {
+  }, [filteredWines])
+
   // console.log(wines)
 
   const handleFilters = (e) => {
-    const filteredArray = wines.filter(wine => wine.country === e.target.value)
-    setFilteredWines(filteredArray)
+    const countryFilteredArray = wines.filter(wine => wine.country === e.target.value)
+    const typeFilteredArray = wines.filter(wine => wine.type === e.target.value)
+    setFilteredWines(countryFilteredArray)
+    setDoubleFilteredWines([ ...countryFilteredArray, ...typeFilteredArray ])
   }
 
   const handleType = (e) => {
@@ -74,35 +80,37 @@ const Catalogue = () => {
         </div>
       </div>
 
-      { (filteredWines.length > 0 ? filteredWines : wines)
+      {(filteredWines.length > 0 || doubleFilteredWines.length > 0 ? filteredWines : wines)
         .map((wine, i) => {
           return (
-            <>              
-              <div className="wine-card" key={i}>
-                <div className="wine-top">
-                  <img src={wine.big_pic} alt="wine" />
-                </div>
-                <Link to={`/wines/${wine.id}`}>
-                  <div className="wine-origin">
-                    <h3><strong>{wine.name}</strong></h3>
-                    <div className="wine-flag">
-                      <h4>{wine.country}</h4>
-                      <span><img src={wine.flag} alt="" /></span>
-                    </div>
-                    <h6>Grapes:</h6>
-                    <ul>
-                      {wine.grapes.map((grape, i) => {
-                        return (
-                          <li key={i}>{grape.name}</li>
-                        )
-                      })}
-                    </ul>
+            <> 
+              <Slide right className="Slide">           
+                <div className="wine-card" key={i}>
+                  <div className="wine-top">
+                    <img src={wine.big_pic} alt="wine" />
                   </div>
-                </Link>
-                <div className="wine-price">
-                  <h5>RRP: £{wine.price}</h5>
+                  <Link to={`/wines/${wine.id}`}>
+                    <div className="wine-origin">
+                      <h3><strong>{wine.name}</strong></h3>
+                      <div className="wine-flag">
+                        <h4>{wine.country}</h4>
+                        <span><img src={wine.flag} alt="" /></span>
+                      </div>
+                      <h6>Grapes:</h6>
+                      <ul>
+                        {wine.grapes.map((grape, i) => {
+                          return (
+                            <li key={i}>{grape.name}</li>
+                          )
+                        })}
+                      </ul>
+                    </div>
+                  </Link>
+                  <div className="wine-price">
+                    <h5>RRP: £{wine.price}</h5>
+                  </div>
                 </div>
-              </div>
+              </Slide>  
             </>
           )
         })}      
