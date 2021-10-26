@@ -1,7 +1,35 @@
-import React from 'react' 
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react' 
+import { Link, useHistory } from 'react-router-dom'
+import axios from 'axios'
 
 const Login = () => {
+
+  const history = useHistory() 
+
+  const [ formData, setFormData ] = useState({
+    email: '',
+    password: '',
+  })
+
+  const handleChange = (event) => {
+    const newObj = { ...formData, [event.target.name]: event.target.value }
+    setFormData(newObj)
+  }
+
+  const setTokenToLocalStorage = (token) => {
+    window.localStorage.setItem('token', token) 
+    history.push('/wines') 
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault() 
+    try {
+      const { data } = await axios.post('/api/auth/login', formData)
+      setTokenToLocalStorage(data.token) 
+    } catch (err) {
+      console.log(err)
+    }
+  }
   return (
     <div className="login-page">
       <div className="reg-info">
@@ -10,15 +38,15 @@ const Login = () => {
       <div className="form-page">
         <div className="container">
           <div className="row">
-            <form className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
+            <form onSubmit={handleSubmit} className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
               <h3>Login</h3>
               <div className="form-field">
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" placeholder="Email" />
+                <input onChange={handleChange} type="email" name="email" placeholder="Email" />
               </div>
               <div className="form-field">
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" placeholder="Password" />
+                <input onChange={handleChange} type="password" name="password" placeholder="Password" />
               </div>
               <button className="btn btn-yellow w-100">Login</button>
               <p className="no-account">Don&apos;t have an Account?<Link to="/register"><span> Click Here</span></Link></p>
