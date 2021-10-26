@@ -37,7 +37,7 @@ const SingleWine = () => {
                 <img src={wine.flag} alt="" />
               </div>
               <p>{wine.bio}</p>
-              <h6>Grapes:</h6>
+              <h6>Grapes 🍇</h6>
               <ul>
                 {grapes.map((grape, i) => {
                   return <li key={i}>{grape.name}</li>
@@ -46,8 +46,12 @@ const SingleWine = () => {
             </div>
           </div>
           <div className="pairings">
-            <h5>Sommelier&apos;s Suggested Pairings</h5>
+            <h4>Sommelier&apos;s Suggested Pairings</h4>
             <p>{wine.pairings}</p>
+          </div>
+          <div className="actions">
+            <button className="buy-btn"><a href="https://www.majestic.co.uk/" rel="noreferrer" target="_blank">Buy Now</a></button>
+            <button className="cellar-btn">Add to Cellar</button>
           </div>
         </div>
         :

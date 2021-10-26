@@ -1,14 +1,23 @@
 .single-page {
   h2 {
+    color: #58181f;
+    border-bottom: 4px solid burlywood;
     text-align: center;
     margin: 0 auto;
     max-width: 400px;
+    margin-bottom: 60px;
   }
   .wine-bio {
     max-width: 500px;
     margin-left: 30px;
     p {
       margin-top: 40px;
+    }
+    h6 {
+      font-size: 20px;
+      color: #58181f;
+      border-bottom: 4px solid burlywood;
+      width: fit-content;
     }
   }
   .pairings {
@@ -26,6 +35,43 @@
       width: 30px;
       height: 30px;
       border-radius: 100%;
+      margin-left: 10px;
+    }
+  }
+  .single-top {
+    margin-bottom: 50px;
+  }
+  ul {
+    li {
+      color: #58181f;
+    }
+  }
+  .pairings {
+    h4 {
+      margin-top: 30px;
+      color: #58181f;
+      border-bottom: 4px solid burlywood;
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    button {
+      margin: 0;
+      color: burlywood;
+      background-color: #58181f;
+      a {
+        color: burlywood;
+      }
+      &:hover {
+        background-color: rgba(88, 24, 31, 0.7);
+      }
+    }
+    .buy-btn {
+      margin-right: 10px;
+    }
+    .cellar-btn {
       margin-left: 10px;
     }
   }
