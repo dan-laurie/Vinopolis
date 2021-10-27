@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 import Slide from 'react-reveal/Slide'
 import Search from '../helpers/Search'
 
@@ -47,6 +48,9 @@ const Catalogue = () => {
   if (!wines) return null
   return (
     <>
+      <Helmet>
+        <title>Vinopolis | Catalogue </title>
+      </Helmet>
       <div className="catalogue-heading">
         <h2>Catalogue</h2>
         <p>Feel free to browse the Vinopolis database below, if you wish to view further information about a certain wine, please click on the desired wine!</p>

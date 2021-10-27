@@ -2,10 +2,12 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import PermissionDenied
-
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 
+from jwt_auth.serializers.populated import PopulatedUserSerializer
+from .models import User
 from django.conf import settings
 import jwt
 
@@ -58,3 +60,12 @@ class LoginView(APIView):
         return Response({'token': token, 'message':
                         f"Welcome back, {user_to_login.username}!"},
                         status=status.HTTP_200_OK)
+
+
+class UserDetailView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
+    def get(self, _request):
+        users = User.objects.all()
+        serialized_users = PopulatedUserSerializer(users, many=True)
+        return Response(serialized_users.data, status=status.HTTP_200_OK)

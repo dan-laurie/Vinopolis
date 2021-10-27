@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 import ImageUpload from '../profile/ImageUpload'
 import Slide from 'react-reveal/Slide'
 
@@ -51,6 +52,9 @@ const Register = () => {
   return (
 
     <>
+      <Helmet>
+        <title>Vinopolis | Register </title>
+      </Helmet>
       <div className="register">
         <Slide left>
           <div className="reg-info">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 import Slide from 'react-reveal/Slide'
 
 const SingleWine = () => {
@@ -28,7 +29,9 @@ const SingleWine = () => {
   return (
     <>
       { wine ? 
-        <div className="single-page">
+        <><Helmet>
+          <title>Vinopolis | {wine.name} </title>
+        </Helmet><div className="single-page">
           <Slide top>
             <h2>{wine.name}</h2>
           </Slide>
@@ -62,7 +65,7 @@ const SingleWine = () => {
               <button className="cellar-btn">Add to Cellar</button>
             </div>
           </Slide>
-        </div>
+        </div></>
         :
         <h2>No Wine Found</h2>
       }
