@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 import Slide from 'react-reveal/Slide'
+import Search from '../helpers/Search'
 
 const Catalogue = () => {
 
@@ -51,8 +52,12 @@ const Catalogue = () => {
         <p>Feel free to browse the Vinopolis database below, if you wish to view further information about a certain wine, please click on the desired wine!</p>
         <p>Happy Browsing!</p>
       </div>
+
       <div className="select-filter">
+  
         <div className="filter-1">
+          
+          <Search wines={wines} setFilteredWines={setFilteredWines} />
           <p>Filter by Country below:</p>
           <select name="filter" id="filter" onChange={handleFilters}>
             <option disabled defaultValue>Choose an Country</option>

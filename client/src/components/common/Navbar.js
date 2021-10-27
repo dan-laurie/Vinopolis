@@ -26,11 +26,11 @@ const Navbar = () => {
         userIsAuthenticated() ?
           
           <>
-            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            {/* <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
+              // <span aria-hidden="true"></span>
+            </a> */}
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
                 <a className="navbar-item">
@@ -51,12 +51,22 @@ const Navbar = () => {
                       <Link to="/education">Education</Link>
                     </a>
                     <a className="navbar-item">
-                      <Link to="/contact">Contact Us</Link>
+                      <Link to="/add">Add to Catalogue</Link>
                     </a>
                   </div>
                 </div>
               </div>
               <div className="navbar-end">
+                <div className="navbar-item has-dropdown is-hoverable">
+                  <a className="navbar-link">
+                    User
+                  </a>
+                  <div className="navbar-dropdown">
+                    <a className="navbar-item" href="#about-us">
+                      <Link to="/about">My Account</Link>
+                    </a>
+                  </div>
+                </div>
                 <div className="navbar-item">
                   <div className="buttons">
                     <a className="logout button">

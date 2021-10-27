@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import axios from 'axios'
+import Slide from 'react-reveal/Slide'
 
 const SingleWine = () => {
 
@@ -28,31 +29,39 @@ const SingleWine = () => {
     <>
       { wine ? 
         <div className="single-page">
-          <h2>{wine.name}</h2>
+          <Slide top>
+            <h2>{wine.name}</h2>
+          </Slide>
           <div className="single-top d-flex justify-content-center align-items-center">
-            <img src={wine.big_pic} alt="" />
+            <Slide left>
+              <img src={wine.big_pic} alt="" />
+            </Slide>
             <div className="wine-bio">
-              <div className="wine-flag">
-                <h4>{wine.country}</h4>
-                <img src={wine.flag} alt="" />
-              </div>
-              <p>{wine.bio}</p>
-              <h6>Grapes 🍇</h6>
-              <ul>
-                {grapes.map((grape, i) => {
-                  return <li key={i}>{grape.name}</li>
-                })}
-              </ul>
+              <Slide right>
+                <div className="wine-flag">
+                  <h4>{wine.country}</h4>
+                  <img src={wine.flag} alt="" />
+                </div>
+                <p>{wine.bio}</p>
+                <h6>Grapes 🍇</h6>
+                <ul>
+                  {grapes.map((grape, i) => {
+                    return <li key={i}>{grape.name}</li>
+                  })}
+                </ul>
+              </Slide>
             </div>
           </div>
-          <div className="pairings">
-            <h4>Sommelier&apos;s Suggested Pairings</h4>
-            <p>{wine.pairings}</p>
-          </div>
-          <div className="actions">
-            <button className="buy-btn"><a href="https://www.majestic.co.uk/" rel="noreferrer" target="_blank">Buy Now</a></button>
-            <button className="cellar-btn">Add to Cellar</button>
-          </div>
+          <Slide bottom>
+            <div className="pairings">
+              <h4>Sommelier&apos;s Suggested Pairings</h4>
+              <p>{wine.pairings}</p>
+            </div>
+            <div className="actions">
+              <button className="buy-btn"><a href="https://www.majestic.co.uk/" rel="noreferrer" target="_blank">Buy Now</a></button>
+              <button className="cellar-btn">Add to Cellar</button>
+            </div>
+          </Slide>
         </div>
         :
         <h2>No Wine Found</h2>

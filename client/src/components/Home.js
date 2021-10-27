@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { userIsAuthenticated } from './helpers/auth'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 
@@ -59,7 +60,11 @@ const Home = () => {
           <h2 className="#about-us">About Us</h2>
           <p>Here at Vinopolis, we want to unite wine lovers from all over the world!</p>
           <p>Browse our catalogue, leave reviews or contribute to the Vinopolis community!</p>
-          <Link to="/wines"><strong>To the Catalogue</strong></Link>
+          { userIsAuthenticated() ?
+            <Link to="/wines"><strong>To the Catalogue!</strong></Link>
+            :
+            <Link to="/login"><strong>Login!</strong></Link>
+          }
         </div>
       </Fade>
 
@@ -68,12 +73,15 @@ const Home = () => {
           <h2 className="#education">Education</h2>
           <p>Interested in taking Wine certification? Look no further! Our team of sommeliers can recommend courses to take.</p>
           <p>Start your journey to become a wine connoisseur</p>
-          <Link to="/education"><strong>To Courses!</strong></Link>
+          { userIsAuthenticated() ?
+            <Link to="/education"><strong>To Courses!</strong></Link>
+            :
+            <Link to="/login"><strong>Login!</strong></Link>
+          }
+          
         </div>
       </Fade>
     </>
-  
-  
   )
 }
 
