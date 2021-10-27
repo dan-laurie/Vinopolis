@@ -1,11 +1,34 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import { userIsAuthenticated } from '../helpers/auth' 
+import { getTokenFromLocalStorage } from '../helpers/auth'
+import axios from 'axios'
 
 const Navbar = () => {
 
+  const token = getTokenFromLocalStorage()
+
   const history = useHistory()
   const location = useLocation()
+
+  const [ user, setUser ] = useState(null)
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await axios('api/auth/user/', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        setUser(data)
+        console.log(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    getData()
+  }, [token])
 
   useEffect(() => {
   }, [location.pathname])
@@ -57,10 +80,16 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="navbar-end">
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">
-                    User
-                  </a>
+                <div className="navbar-item has-dropdown is-hoverable">                  
+                  {user ?
+                    <a className="navbar-link">
+                      {user.first_name}
+                    </a>
+                    :
+                    <a className="navbar-link">
+                        User
+                    </a>
+                  }                   
                   <div className="navbar-dropdown">
                     <a className="navbar-item" href="#about-us">
                       <Link to="/about">My Account</Link>

@@ -12,5 +12,6 @@ class User(AbstractUser):
     profile_image = models.CharField(max_length=500)
     favourites = models.ManyToManyField(
         'wines.Wine',
-        related_name='users'
+        related_name='users',
+        blank=True
     )

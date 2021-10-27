@@ -9,4 +9,4 @@ class PopulatedWineSerializer(WineSerializer):
     reviews = PopulatedReviewSerializer(many=True)
     grapes = GrapeSerializer(many=True)
     owner = UserSerializer()
-    favourites = PopulatedUserSerializer(many=True)
+    # favourites = UserSerializer(many=True)

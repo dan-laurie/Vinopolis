@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated
 from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 
@@ -63,9 +63,9 @@ class LoginView(APIView):
 
 
 class UserDetailView(APIView):
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticated, )
 
-    def get(self, _request):
-        users = User.objects.all()
-        serialized_users = PopulatedUserSerializer(users, many=True)
-        return Response(serialized_users.data, status=status.HTTP_200_OK)
+    def get(self, request):
+        user = User.objects.get(pk=request.user.id)
+        serialized_user = UserSerializer(user)
+        return Response(serialized_user.data, status=status.HTTP_200_OK)
