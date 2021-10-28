@@ -10,6 +10,8 @@ import Login from './components/auth/Login'
 import Catalogue from './components/catalogue/Catalogue'
 import SingleWine from './components/catalogue/SingleWine'
 import Review from './components/auth/Review'
+import Education from './components/education/Education'
+import About from './components/about/About'
 
 
 function App() {
@@ -35,6 +37,12 @@ function App() {
         </Route>
         <Route exact path='/wines/:id/review'>
           <Review  />
+        </Route>
+        <Route exact path='/education'>
+          <Education  />
+        </Route>
+        <Route exact path='/about'>
+          <About  />
         </Route>
       </Switch>
       <Pulse>
