@@ -79,23 +79,16 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="navbar-end">
-                <div className="navbar-item has-dropdown is-hoverable">                  
-                  {user ?
-                    <a className="navbar-link">
-                      {user.first_name}
-                    </a>
-                    :
-                    <a className="navbar-link">
-                        User
-                    </a>
-                  }                   
-                  <div className="navbar-dropdown">
-                    <a className="navbar-item" href="#about-us">
-                      <Link to="/about">My Account</Link>
-                    </a>
-                  </div>
-                </div>
+              <div className="navbar-end">               
+                {user ?
+                  <p className="navbar-item mb-0">
+                    {user.first_name}
+                  </p>
+                  :
+                  <p className="navbar-item">
+                      User
+                  </p>
+                }                   
                 <div className="navbar-item">
                   <div className="buttons">
                     <a className="logout button">

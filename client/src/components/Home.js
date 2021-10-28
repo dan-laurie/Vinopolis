@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom'
 import { userIsAuthenticated } from './helpers/auth'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   return (
     <>
-      
+      <Helmet>
+        <title>Vinopolis | Home</title>
+      </Helmet>
       <div className="title-img">
         <Slide left>
           <img className="title-img" src="https://i.imgur.com/lr0MJZO.png"></img>
@@ -61,9 +64,9 @@ const Home = () => {
           <p>Here at Vinopolis, we want to unite wine lovers from all over the world!</p>
           <p>Browse our catalogue, leave reviews or contribute to the Vinopolis community!</p>
           { userIsAuthenticated() ?
-            <Link to="/wines"><strong>To the Catalogue!</strong></Link>
+            <Link to="/wines"><strong>To the Catalogue</strong></Link>
             :
-            <Link to="/login"><strong>Login!</strong></Link>
+            <Link to="/login"><strong>To the Catalogue</strong></Link>
           }
         </div>
       </Fade>
@@ -74,9 +77,9 @@ const Home = () => {
           <p>Interested in taking Wine certification? Look no further! Our team of sommeliers can recommend courses to take.</p>
           <p>Start your journey to become a wine connoisseur</p>
           { userIsAuthenticated() ?
-            <Link to="/education"><strong>To Courses!</strong></Link>
+            <Link to="/education"><strong>To Courses</strong></Link>
             :
-            <Link to="/login"><strong>Login!</strong></Link>
+            <Link to="/login"><strong>To Courses</strong></Link>
           }
           
         </div>

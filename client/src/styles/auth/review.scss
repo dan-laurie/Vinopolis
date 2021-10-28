@@ -7,12 +7,16 @@
   top: 10px;
 }
 
+input[type="file" i] {
+  padding: 4px;
+}
 .review-post {
   border-radius: 10px;
   .name {
     border: 1px solid black;
     background-color: #58181f;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     p strong {
       color: burlywood;
       font-size: 20px;

@@ -51,43 +51,44 @@ const Catalogue = () => {
       <Helmet>
         <title>Vinopolis | Catalogue </title>
       </Helmet>
-      <div className="catalogue-heading">
-        <h2>Catalogue</h2>
-        <p>Feel free to browse the Vinopolis database below, if you wish to view further information about a certain wine, please click on the desired wine!</p>
-        <p>Happy Browsing!</p>
-      </div>
-
-      <div className="select-filter">
-  
-        <div className="filter-1">
-          
-          <Search wines={wines} setFilteredWines={setFilteredWines} />
-          <p>Filter by Country below:</p>
-          <select name="filter" id="filter" onChange={handleFilters}>
-            <option disabled defaultValue>Choose an Country</option>
-            <option value="all">All</option>
-            {wines.reduce((acc, wine) => {
-              return !acc.includes(wine.country) ? [...acc, wine.country] : acc
-            }, []).map((country, i) => {
-              return (
-                <option key={i} value={country}>{country}</option>
-              )
-            })}
-          </select>
-          <p>Filter by Type below:</p>
-          <select name="filter" id="filter" onChange={handleType}>
-            <option disabled defaultValue>Choose a Type</option>
-            <option value="all">All</option>
-            {wines.reduce((acc, wine) => {
-              return !acc.includes(wine.type) ? [...acc, wine.type] : acc
-            }, []).map((type, i) => {
-              return (
-                <option key={i} value={type}>{type}</option>
-              )
-            })}
-          </select>
+      <Slide top>
+        <div className="catalogue-heading">
+          <h2>Catalogue</h2>
+          <p>Feel free to browse the Vinopolis database below, if you wish to view further information about a certain wine, please click on the desired wine!</p>
+          <p>Happy Browsing!</p>
         </div>
-      </div>
+      </Slide>
+      <Slide left>
+        <div className="select-filter">
+          <div className="filter-1">  
+            <Search wines={wines} setFilteredWines={setFilteredWines} />
+            <p>Filter by Country below:</p>
+            <select name="filter" id="filter" onChange={handleFilters}>
+              <option disabled defaultValue>Choose an Country</option>
+              <option value="all">All</option>
+              {wines.reduce((acc, wine) => {
+                return !acc.includes(wine.country) ? [...acc, wine.country] : acc
+              }, []).map((country, i) => {
+                return (
+                  <option key={i} value={country}>{country}</option>
+                )
+              })}
+            </select>
+            <p>Filter by Type below:</p>
+            <select name="filter" id="filter" onChange={handleType}>
+              <option disabled defaultValue>Choose a Type</option>
+              <option value="all">All</option>
+              {wines.reduce((acc, wine) => {
+                return !acc.includes(wine.type) ? [...acc, wine.type] : acc
+              }, []).map((type, i) => {
+                return (
+                  <option key={i} value={type}>{type}</option>
+                )
+              })}
+            </select>
+          </div>
+        </div>
+      </Slide>
 
       {(filteredWines.length > 0 || doubleFilteredWines.length > 0 ? filteredWines : wines)
         .map((wine, i) => {

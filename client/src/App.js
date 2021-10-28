@@ -14,6 +14,7 @@ import Education from './components/education/Education'
 import About from './components/about/About'
 
 
+
 function App() {
 
   return (
