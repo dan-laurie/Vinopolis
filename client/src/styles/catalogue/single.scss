@@ -76,3 +76,25 @@
     }
   }
 }
+
+.back-button {
+  background-color: #58181f;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-left: 150px;
+  top: 50px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    background-color: burlywood;
+    transform: scale(1.03);
+  }
+  a {
+    color: burlywood;
+    &:hover {
+      color: #58181f;
+    }
+  }
+}

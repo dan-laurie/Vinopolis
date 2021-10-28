@@ -1,0 +1,55 @@
+.textarea {
+  background-color: white;
+}
+
+.review-form {
+  position: relative;
+  top: 10px;
+}
+
+.review-post {
+  border-radius: 10px;
+  .name {
+    border: 1px solid black;
+    background-color: #58181f;
+    border-radius: 10px;
+    p strong {
+      color: burlywood;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  width: 600px;
+  background-color: burlywood;
+  margin-bottom: 20px;
+  .review-bottom {
+    border-radius: 10px;
+    background-color: #58181f;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    p {
+      margin-right: 10px;
+      margin-top: 8px;
+      color: burlywood;
+    }
+    .delete-button {
+      margin: 8px 0 0 0;
+      width: fit-content;
+    }
+  }
+  .review-text {
+    text-align: center;
+    max-width: 600px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #58181f;
+  }
+  .text-post {
+    margin-bottom: 0;
+  }
+}

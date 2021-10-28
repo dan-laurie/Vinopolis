@@ -9,6 +9,7 @@ import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import Catalogue from './components/catalogue/Catalogue'
 import SingleWine from './components/catalogue/SingleWine'
+import Review from './components/auth/Review'
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path='/wines/:id'>
           <SingleWine  />
+        </Route>
+        <Route exact path='/wines/:id/review'>
+          <Review  />
         </Route>
       </Switch>
       <Pulse>
