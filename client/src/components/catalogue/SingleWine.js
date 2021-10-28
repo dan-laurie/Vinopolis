@@ -30,6 +30,8 @@ const SingleWine = () => {
     getWine()
   },[id])
 
+
+
   const userIsOwner = (ownerId) => {
     const payload = getPayload()
     if (!payload) return
@@ -37,25 +39,21 @@ const SingleWine = () => {
   }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const handleDelete = useCallback(async (e) => {
+  const handleDelete = async (e) => {
     try {
       await axios.delete(`/api/reviews/${e.target.name}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },
       })
-      if (!toggle) {
-        setToggle(true)
-      } else {
-        setToggle(false)
-      }
+      const { data } = await axios(`/api/wines/${id}`)
+      setWine(data)
+      setGrapes(data.grapes)
     } catch (err) {
       console.log(err)
     }
-  })
-
-  useEffect(() => {}, [handleDelete])
-
+  }
+  
   return (
     <>
       { wine ? 

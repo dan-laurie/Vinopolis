@@ -1,0 +1,43 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    width: fit-content;
+    color: #58181f;
+    border-bottom: 4px solid burlywood;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  i {
+    font-size: 60px;
+    padding: 10px;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    width: fit-content;
+    color: #58181f;
+    border-bottom: 4px solid burlywood;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .social-icons {
+    a {
+      background-color: white;
+    }
+    .fab,
+    .fas {
+      color: #58181f;
+      padding: 10px;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
