@@ -73,9 +73,9 @@ const Navbar = () => {
                     <a className="navbar-item">
                       <Link to="/education">Education</Link>
                     </a>
-                    <a className="navbar-item">
+                    {/* <a className="navbar-item">
                       <Link to="/add">Add to Catalogue</Link>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

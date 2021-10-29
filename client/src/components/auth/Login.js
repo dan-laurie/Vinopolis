@@ -7,7 +7,11 @@ import { Helmet } from 'react-helmet'
 const Login = () => {
 
   const history = useHistory() 
-  const [ errors, setErrors ] = useState(null)
+
+  const [ errors, setErrors ] = useState({
+    email: '',
+    password: '',
+  })
   const [ formData, setFormData ] = useState({
     email: '',
     password: '',
@@ -54,15 +58,15 @@ const Login = () => {
                   <div className="form-field">
                     <label htmlFor="email">Email</label>
                     <input onChange={handleChange} type="email" name="email" placeholder="Email" />
-                    {/* {errors.email && <p className="error">{errors.email.message}</p>} */}
+                    {errors.email && <p className="error">{errors.email.message}</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="password">Password</label>
                     <input onChange={handleChange} type="password" name="password" placeholder="Password" />
-                    {/* {errors.password && <p className="error">{errors.password.message}</p>} */}
+                    {errors.password && <p className="error">{errors.password.message}</p>}
                   </div>
                   <button className="btn btn-yellow w-100">Login</button>
-                  <p className="no-account">Don&apos;t have an Account?<Link to="/register"><span> Click Here</span></Link></p>
+                  <p className="no-account">Don&apos;t have an Account? <Link to="/register"><span>Click Here</span></Link></p>
                 </form>
               </div>
             </div>

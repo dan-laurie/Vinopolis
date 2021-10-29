@@ -62,7 +62,7 @@ const Home = () => {
         <div className="gen-info">
           <h2 className="#about-us">About Us</h2>
           <p>Here at Vinopolis, we want to unite wine lovers from all over the world!</p>
-          <p>Browse our catalogue, leave reviews or contribute to the Vinopolis community!</p>
+          <p>Browse our catalogue, leave reviews, join the Vinopolis community!</p>
           { userIsAuthenticated() ?
             <Link to="/wines"><strong>To the Catalogue</strong></Link>
             :
