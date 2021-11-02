@@ -10,6 +10,8 @@ A solo full stack application using Python/Django, built in 7 days! I decided to
 - Python
 - Django
 - PostgreSQL
+- Yarn, NPM
+- Git, GitHub
 - Devicon, FontAwesome
 
 ## Home Page
